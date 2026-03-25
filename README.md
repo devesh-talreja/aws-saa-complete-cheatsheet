@@ -1,86 +1,116 @@
-# ☁️ AWS Solutions Architect Associate — Master Cheatsheet
+# ☁️ AWS SAA — Master Cheatsheet & Exam Guide
 
-> **By Devesh Talreja**
+[![AWS](https://img.shields.io/badge/AWS-SAA--C03-orange?style=flat&logo=amazonaws)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Sections](https://img.shields.io/badge/Sections-26-green)]()
 
-A comprehensive, exam-ready cheatsheet for the **AWS Solutions Architect Associate (SAA-C03)** certification.
+> **By [Devesh Talreja](https://github.com/devesh-talreja)**
 
-> Complete Service Reference · Comparison Tables · Architectural Patterns · Exam Traps & Mnemonics · Practice Questions · Category Summaries
+---
+
+## 📖 About These Notes
+
+These notes were created by me during my **AWS Solutions Architect Associate (SAA-C03)** exam preparation. I used them heavily during revision — going through each section multiple times to reinforce concepts, memorize key differences, and drill exam traps.
+
+The content covers **all exam domains** with a focus on what actually matters for the exam: comparison tables, architectural decision points, mnemonics, and exam trap callouts.
+
+> **A note on AI assistance:** I used AI tools to help structure, format, and refine these notes — but the core content, the exam insights, and the revision strategy behind them are entirely from my own study sessions. Think of it as having a smart study partner who helped keep the notes clean and well-organized.
+
+If you're prepping for the SAA exam, feel free to use these notes as your revision companion — that's exactly what they were built for.
 
 ---
 
 ## 📚 Table of Contents
 
-1. [IAM — Identity & Access Management](sections/01-iam.md)
-2. [EC2 — Elastic Compute Cloud](sections/02-ec2.md)
-3. [AWS Lambda](sections/03-lambda.md)
-4. [Containers on AWS: ECS, EKS, Fargate](sections/04-containers.md)
-5. [S3 — Simple Storage Service](sections/05-s3.md)
-6. [Storage Gateway](sections/06-storage-gateway.md)
-7. [Database Selection Guide](sections/07-database-selection.md)
-8. [RDS — Relational Database Service](sections/08-rds.md)
-9. [Aurora — The Exam Favorite](sections/09-aurora.md)
-10. [DynamoDB — The Serverless NoSQL Giant](sections/10-dynamodb.md)
-11. [ElastiCache — Caching Strategies](sections/11-elasticache.md)
-12. [VPC — Virtual Private Cloud](sections/12-vpc.md)
-13. [Route 53 — DNS & Routing Policies](sections/13-route53.md)
-14. [CloudFront — Content Delivery Network](sections/14-cloudfront.md)
-15. [Elastic Load Balancing — Three Types Compared](sections/15-load-balancing.md)
-16. [Messaging & Event-Driven Architecture](sections/16-messaging.md)
-17. [Monitoring Stack — CloudWatch, CloudTrail, Config](sections/17-monitoring.md)
-18. [Security Services — Know Your Defense Layers](sections/18-security.md)
-19. [Core Architectural Patterns for SAA](sections/19-architectural-patterns.md)
-20. [Migration Services](sections/20-migration.md)
-21. [Analytics Services](sections/21-analytics.md)
-22. [Application Integration & Orchestration](sections/22-app-integration.md)
-23. [Other Important Services](sections/23-other-services.md)
-24. [Most-Confused Services & Concepts](sections/24-common-confusions.md)
-25. [Exam-Style Practice Questions](sections/25-practice-questions.md)
-26. [Summary: Service Selection by Problem Type](sections/26-summary-quick-reference.md)
+| # | Section | What's Inside |
+|---|---------|--------------|
+| 1 | [IAM — Identity & Access Management](sections/01-iam.md) | Users, Groups, Roles, Policies, STS, Permission Boundaries, MFA best practices |
+| 2 | [EC2 — Elastic Compute Cloud](sections/02-ec2.md) | Instance families, Purchasing options (On-Demand/Reserved/Spot/Dedicated), ASG, Placement Groups, EBS/EFS/FSx |
+| 3 | [AWS Lambda](sections/03-lambda.md) | Execution limits, Concurrency (reserved/provisioned), Triggers, Destinations, Error Handling |
+| 4 | [Containers on AWS: ECS, EKS, Fargate](sections/04-containers.md) | ECS vs EKS vs Fargate vs App Runner, ECR, when to use each |
+| 5 | [S3 — Simple Storage Service](sections/05-s3.md) | Storage classes, Lifecycle policies, Security layers, Encryption types, CRR/SRR, Performance |
+| 6 | [Storage Gateway](sections/06-storage-gateway.md) | S3 File Gateway, FSx File Gateway, Volume Gateway (Cached/Stored), Tape Gateway |
+| 7 | [Database Selection Guide](sections/07-database-selection.md) | RDS vs Aurora vs DynamoDB vs Redshift vs Neptune — full decision table |
+| 8 | [RDS — Relational Database Service](sections/08-rds.md) | Multi-AZ vs Read Replicas (classic confusion), Backups, PITR |
+| 9 | [Aurora — The Exam Favorite](sections/09-aurora.md) | Cluster storage architecture, Serverless v2, Backtrack, Global Database |
+| 10 | [DynamoDB — The Serverless NoSQL Giant](sections/10-dynamodb.md) | Partition/Sort keys, LSI vs GSI, DAX, Streams, Global Tables, Transactions, TTL |
+| 11 | [ElastiCache — Caching Strategies](sections/11-elasticache.md) | Redis vs Memcached, Lazy Loading, Write-Through, Write-Behind, TTL |
+| 12 | [VPC — Virtual Private Cloud](sections/12-vpc.md) | Subnets, IGW, NAT Gateway, SG vs NACL, Peering, Transit Gateway, PrivateLink, Flow Logs |
+| 13 | [Route 53 — DNS & Routing Policies](sections/13-route53.md) | All 8 routing policies, Health Checks, Geolocation vs Geoproximity |
+| 14 | [CloudFront — Content Delivery Network](sections/14-cloudfront.md) | Origins, OAC, Signed URLs/Cookies, Lambda@Edge vs CF Functions, WAF, Field Encryption |
+| 15 | [Elastic Load Balancing — Three Types Compared](sections/15-load-balancing.md) | ALB vs NLB vs GWLB, Advanced ALB routing, Connection Draining |
+| 16 | [Messaging & Event-Driven Architecture](sections/16-messaging.md) | SQS (Standard/FIFO), SNS, EventBridge, Kinesis Streams/Firehose/Analytics, MSK, MQ |
+| 17 | [Monitoring Stack — CloudWatch, CloudTrail, Config](sections/17-monitoring.md) | Metrics, Logs, Alarms, CloudTrail audit, AWS Config compliance, X-Ray tracing |
+| 18 | [Security Services — Know Your Defense Layers](sections/18-security.md) | WAF, Shield, GuardDuty, Inspector, Macie, KMS, CloudHSM, Secrets Manager, Firewall Manager |
+| 19 | [Core Architectural Patterns for SAA](sections/19-architectural-patterns.md) | HA Web App, Serverless Pattern, DR strategies (RTO/RPO), Data Lake, Event-Driven, Well-Architected 6 Pillars |
+| 20 | [Migration Services](sections/20-migration.md) | DMS + SCT, Application Migration Service, Snowball/Snowmobile, DataSync, Transfer Family |
+| 21 | [Analytics Services](sections/21-analytics.md) | Athena, Redshift, EMR, Glue, QuickSight, OpenSearch, Lake Formation |
+| 22 | [Application Integration & Orchestration](sections/22-app-integration.md) | Step Functions, AppFlow, API Gateway (REST vs HTTP), AppSync, SWF |
+| 23 | [Other Important Services](sections/23-other-services.md) | CloudFormation, CDK, Elastic Beanstalk, SSM, Organizations, Control Tower, Global Accelerator, Outposts |
+| 24 | [Most-Confused Services & Concepts](sections/24-common-confusions.md) | Side-by-side: GA vs CloudFront, SQS vs SNS vs Kinesis, EBS vs EFS vs S3, Multi-AZ variations, Cognito Pools |
+| 25 | [Exam-Style Practice Questions](sections/25-practice-questions.md) | 10 scenario-based questions across all 4 SAA domains with full explanations |
+| 26 | [Summary: Service Selection by Problem Type](sections/26-summary-quick-reference.md) | "I need to store/compute/connect/secure..." quick-pick tables + Key numbers to memorize + Final tips |
 
 ---
 
-## 🗂️ Sections at a Glance
+## 🚀 How to Use These Notes
 
-| # | Section | Key Topics |
-|---|---------|-----------|
-| 1 | [IAM](sections/01-iam.md) | Users, Roles, Policies, STS, Permission Boundaries, MFA |
-| 2 | [EC2](sections/02-ec2.md) | Instance Families, Purchasing Options, ASG, Placement Groups, EBS/EFS |
-| 3 | [Lambda](sections/03-lambda.md) | Limits, Triggers, Concurrency, Destinations, Error Handling |
-| 4 | [Containers](sections/04-containers.md) | ECS, EKS, Fargate, ECR, App Runner |
-| 5 | [S3](sections/05-s3.md) | Storage Classes, Security, Encryption, Replication, Performance |
-| 6 | [Storage Gateway](sections/06-storage-gateway.md) | S3 File, FSx File, Volume (Cached/Stored), Tape Gateways |
-| 7 | [Database Selection](sections/07-database-selection.md) | Choosing the right DB: RDS vs DynamoDB vs Redshift vs Neptune etc. |
-| 8 | [RDS](sections/08-rds.md) | Multi-AZ vs Read Replicas, Backups, Deletion Protection |
-| 9 | [Aurora](sections/09-aurora.md) | Cluster Architecture, Serverless v2, Backtrack, Global Database |
-| 10 | [DynamoDB](sections/10-dynamodb.md) | Keys, Consistency, LSI/GSI, DAX, Streams, Global Tables, TTL |
-| 11 | [ElastiCache](sections/11-elasticache.md) | Redis vs Memcached, Lazy Loading, Write-Through, Write-Behind |
-| 12 | [VPC](sections/12-vpc.md) | Subnets, IGW, NAT, SG vs NACL, Peering, Transit Gateway, Flow Logs |
-| 13 | [Route 53](sections/13-route53.md) | 8 Routing Policies, Health Checks, Geolocation vs Geoproximity |
-| 14 | [CloudFront](sections/14-cloudfront.md) | CDN, OAC, Signed URLs/Cookies, Lambda@Edge, WAF, Field Encryption |
-| 15 | [Load Balancing](sections/15-load-balancing.md) | ALB vs NLB vs GWLB, Advanced Routing, Deregistration Delay |
-| 16 | [Messaging](sections/16-messaging.md) | SQS, SNS, EventBridge, Kinesis Streams/Firehose/Analytics, MSK, MQ |
-| 17 | [Monitoring](sections/17-monitoring.md) | CloudWatch, CloudTrail, AWS Config, X-Ray, Health Dashboard |
-| 18 | [Security](sections/18-security.md) | WAF, Shield, GuardDuty, Inspector, Macie, KMS, CloudHSM, Secrets Manager |
-| 19 | [Arch Patterns](sections/19-architectural-patterns.md) | HA Web App, Serverless, DR Strategies, Data Lake, Well-Architected 6 Pillars |
-| 20 | [Migration](sections/20-migration.md) | DMS, Application MGN, Snowball/Snowmobile, DataSync, Transfer Family |
-| 21 | [Analytics](sections/21-analytics.md) | Athena, Redshift, EMR, Glue, QuickSight, OpenSearch, Lake Formation |
-| 22 | [App Integration](sections/22-app-integration.md) | Step Functions, AppFlow, API Gateway, AppSync, SWF |
-| 23 | [Other Services](sections/23-other-services.md) | CloudFormation, Beanstalk, SSM, Organizations, Control Tower, Global Accelerator |
-| 24 | [Common Confusions](sections/24-common-confusions.md) | Side-by-side comparisons: GA vs CF, SQS vs SNS vs Kinesis, EBS vs EFS vs S3 |
-| 25 | [Practice Questions](sections/25-practice-questions.md) | 10 exam-style scenario questions with full explanations |
-| 26 | [Quick Reference](sections/26-summary-quick-reference.md) | Service by problem type, Key numbers to memorize, Final tips |
+### For Exam Preparation
+1. **First pass:** Go through sections 1–19 in order to build foundational knowledge
+2. **Second pass:** Focus on sections 24 (Common Confusions) and 26 (Quick Reference) — these are high-yield for the exam
+3. **Practice:** Work through section 25 (Practice Questions) after covering the content
+4. **Day before exam:** Review section 26 only — the key numbers table and final tips
+
+### Reading the Callouts
+Each section uses consistent callout formatting:
+- **⚠️ EXAM TRAP** — The most commonly missed concepts; these directly address wrong answer choices
+- **💡 TIP** — Practical exam strategy and "when to use what" guidance
+- **🧠 MNEMONIC** — Memory aids for complex comparisons (e.g., "C = CPU crunching" for Compute Optimized)
+- **📌 NOTE** — Additional context before answers in practice questions
+
+### Navigation
+Every section file has **← prev | README | next →** links at the bottom so you can move through sections without coming back to this page.
 
 ---
 
-## 🚀 How to Use This Guide
+## ⚠️ Disclaimer
 
-- **Jump directly** to any section via the Table of Contents
-- Look for **⚠️ EXAM TRAP** callouts — these are the most-missed exam concepts
-- Look for **🧠 MNEMONIC** callouts — memory aids for complex topics
-- Look for **💡 TIP** callouts — practical exam strategy
-- Use the **[Quick Reference](sections/26-summary-quick-reference.md)** the night before your exam
-- Each section file has **← prev | README | next →** navigation at the bottom
+- These are **personal study notes**, not official AWS documentation
+- Information is accurate as of **early 2025 (SAA-C03 exam version)**
+- AWS services evolve constantly — always cross-check with official AWS docs for the latest details
+- These notes are optimized for **exam preparation**, not for production architecture decisions
+- Some content is intentionally simplified to aid memorization
 
 ---
 
-*Good luck on your AWS SAA exam! ☁️*
+## 🔗 Official AWS Resources
+
+| Resource | Link |
+|----------|------|
+| SAA-C03 Exam Guide | [aws.amazon.com/certification/certified-solutions-architect-associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/) |
+| AWS Official Documentation | [docs.aws.amazon.com](https://docs.aws.amazon.com/) |
+| AWS Well-Architected Framework | [aws.amazon.com/architecture/well-architected](https://aws.amazon.com/architecture/well-architected/) |
+| AWS Architecture Center | [aws.amazon.com/architecture](https://aws.amazon.com/architecture/) |
+| AWS Whitepapers | [aws.amazon.com/whitepapers](https://aws.amazon.com/whitepapers/) |
+| AWS FAQs (exam-relevant) | [aws.amazon.com/faqs](https://aws.amazon.com/faqs/) |
+| AWS Free Tier (practice) | [aws.amazon.com/free](https://aws.amazon.com/free/) |
+
+---
+
+## 📂 Repository Structure
+
+```
+aws-saa-cheatsheet/
+├── README.md                          ← You are here
+└── sections/
+    ├── 01-iam.md
+    ├── 02-ec2.md
+    ├── 03-lambda.md
+    ├── ...
+    └── 26-summary-quick-reference.md
+```
+
+---
+
+*Good luck on your AWS SAA exam! ☁️*  
+*— Devesh Talreja*
