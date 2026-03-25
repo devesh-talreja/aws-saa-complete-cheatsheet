@@ -112,17 +112,19 @@ These are personal study notes, not official AWS documentation. AWS services evo
 
 ## 🤝 Contributing
 
-We welcome contributions from the community to keep this cheat sheet up-to-date! If you have suggestions, corrections, or additional content to add, please:
+This cheatsheet is a living document! If you spot a typo, find an outdated fact, or have a brilliant mnemonic to add, contributions are highly encouraged.
 
-1. [Fork the repository](https://github.com/devesh-talreja/aws-saa-cheatsheet/fork)
-2. Create a feature branch
-3. Submit a pull request with your changes
+To suggest improvements and make learning easier for yourself and others:
+1. Fork the repo and create your feature branch.
+2. Commit your changes and submit a pull request.
+
+You're also welcome to simply clone the repository to keep a local copy for your own offline study sessions.
 
 ## 📄 License
 
-This cheat sheet is released under the MIT License. Feel free to use, modify, and share it as needed.
+This repository is available under the [MIT License](LICENSE). Feel free to use and distribute these notes to help with your own AWS journey!
 
 ---
 
-**Happy Learning and Best of Luck with Your AWS-SAA Certification! 🎉 Gambare! ☁️**
+**Happy Learning and best of luck conquering the AWS SAA exam! 🚀 Gambare! ☁️**
 *— Devesh Talreja*
