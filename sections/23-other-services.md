@@ -18,7 +18,7 @@
 | AWS Wavelength | AWS infrastructure embedded in telecom 5G networks | Ultra-low latency to mobile/connected devices; no traffic leaves telecom provider network |
 | AWS Local Zones | AWS infrastructure in metro areas outside main regions | Single-digit ms latency to specific cities; extension of a parent region |
 
-| SECTION 11 — THE 'WHICH ONE?' QUICK REFERENCE (COMMON CONFUSIONS) |
+| NEXT: SECTION 11 — THE 'WHICH ONE?' QUICK REFERENCE (COMMON CONFUSIONS) |
 | :---: |
 
 ---
