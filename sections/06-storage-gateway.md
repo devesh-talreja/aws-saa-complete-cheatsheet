@@ -13,7 +13,7 @@ Storage Gateway bridges on-premises infrastructure with AWS cloud storage. Criti
 | 🧠 MNEMONIC: File \= NFS/SMB → S3 | Volume \= Block (iSCSI) | Tape \= VTL. If the question says 'on-prem NFS access to S3' → S3 File Gateway. If it says 'replace physical tape backup' → Tape Gateway. |
 | :---- |
 
-| SECTION 4 — DATABASES: RDS, AURORA, DYNAMODB & MORE |
+| NEXT: SECTION 4 — DATABASES: RDS, AURORA, DYNAMODB & MORE |
 | :---: |
 
 ---
