@@ -61,7 +61,7 @@ Decoupling components is a core AWS architectural principle. These services are 
 | 🧠 MNEMONIC: Kinesis \= Real-time \+ Replay \+ Multiple consumers. Firehose \= Load \+ Near-real-time \+ Delivery to S3/Redshift/OpenSearch. Analytics \= SQL on streams. Streams needs producers/consumers managed; Firehose is fully managed ingestion. |
 | :---- |
 
-| SECTION 8 — MONITORING, LOGGING, SECURITY & COMPLIANCE |
+| NEXT: SECTION 8 — MONITORING, LOGGING, SECURITY & COMPLIANCE |
 | :---: |
 
 ---
