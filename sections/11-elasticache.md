@@ -10,7 +10,7 @@
 | ⚠️ EXAM TRAP: Redis vs Memcached for the exam: If the question mentions ANY of these → choose Redis: persistence, pub/sub, Lua scripting, sorted sets (leaderboards), geospatial, replication, Multi-AZ, backups, or complex data structures. Memcached is only chosen for 'simple, stateless cache needing horizontal scale with multiple CPU cores.' |
 | :---- |
 
-|  SECTION 5 — NETWORKING: VPC, ROUTE 53, CLOUDFRONT & MORE |
+| NEXT: SECTION 5 — NETWORKING: VPC, ROUTE 53, CLOUDFRONT & MORE |
 | :---- |
 
 ---
