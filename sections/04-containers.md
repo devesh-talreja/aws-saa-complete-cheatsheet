@@ -13,7 +13,7 @@ Containers abstract the runtime environment. The exam asks which container platf
 | ⚠️ EXAM TRAP: Fargate is NOT a service you choose independently — it's a launch type for ECS or EKS. When a question says 'serverless containers,' they want ECS/EKS with Fargate launch type, NOT a separate Fargate service. |
 | :---- |
 
-| SECTION 3 — STORAGE: S3, EBS, EFS, GLACIER & MORE |
+| NEXT: SECTION 3 — STORAGE: S3, EBS, EFS, GLACIER & MORE |
 | :---: |
 
 ---
